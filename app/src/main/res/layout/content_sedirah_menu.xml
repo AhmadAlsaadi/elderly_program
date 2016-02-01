@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0e6d69"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.projects.saadias.test.Sedirah_menu"
+    tools:showIn="@layout/activity_sedirah_menu">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <ImageView
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+             android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:textSize="30dp"
+             android:layout_marginTop="7dp"
+            android:id="@+id/voice_button"
+            android:src="@drawable/sound"
+            android:onClick="onClick" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:textSize="30dp"
+            android:id="@+id/quran_button"
+            android:text="سورة الكهف"
+            android:onClick="onClick"
+            android:background="#000000"
+            android:textColor="#10827e"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:textSize="30dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/voice_button2"
+            android:src="@drawable/sound"
+            android:onClick="onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:textSize="30dp"
+            android:id="@+id/morning_prayer"
+            android:text="أذكار الصباح"
+            android:background="#000000"
+            android:textColor="#10827e"
+            android:onClick="onClick"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:textSize="30dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/voice_button3"
+            android:src="@drawable/sound"
+            android:onClick="onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:textSize="30dp"
+            android:id="@+id/evening_prayer"
+            android:text="اذكار المساء"
+            android:background="#000000"
+            android:textColor="#10827e"
+            android:onClick="onClick"/>
+    </LinearLayout>
+</LinearLayout>
